@@ -1,0 +1,100 @@
+
+.grocery_nav{
+    display: grid;
+    background-color: #fafafa;
+    grid-template-columns: repeat(4,1fr);
+    height: 10vh;
+    align-items: center;
+    padding: 0px 25px;
+}
+.fixednav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.lowerDiv{
+    background-color: rgb(219, 247, 241,0.2);
+}
+i{
+    font-size: 30px;
+}
+.logo img{
+    height: 40px;
+ }
+ .logo p{
+    font-size: 25px;
+    margin-top: 25px;
+ }
+ .search_bar input{
+    height: 35px;
+    width: 70%;
+    border-radius: 1px;
+}
+
+li:hover{
+  background-color: #cec8c8;
+  border-radius: 5px;
+}
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 200px) and (max-width: 485px){ 
+    .grocery_nav{
+        font-size: 10px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .search_bar input{
+        font-size: 10px;
+    }
+    .links li a{
+        font-size: 10px;
+        padding: 5px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 660px){ 
+    .grocery_nav{
+        grid-template-columns: auto;
+        height: auto;
+        padding: 10px 5px;
+    }
+    .search_bar{
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 1;
+    }
+    .search_bar input{
+        width: 70%;
+    }
+    .links{
+        grid-column: 3;
+        grid-row: 3;
+        grid-column: 1/span 1;
+    }
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+    .grocery_nav{
+        grid-template-columns: auto auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .search_bar input{
+        width: 100%;
+    }
+    .links{
+        grid-column: 3;
+        grid-row: 3;
+        grid-column: 1/span 1;
+    }
+ }
+
+ .row{
+    width: 99.7vw;
+ }

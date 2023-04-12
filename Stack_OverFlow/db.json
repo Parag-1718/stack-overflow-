@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "email": "ram@gamil.com",
+      "password": "ram111",
+      "displayname": "ram",
+      "id": 1
+    },
+    {
+      "email": "peter@gmail.com",
+      "password": "111111",
+      "displayname": "ram2",
+      "id": 4
+    },
+    {
+      "email": "ramp@gmail.com",
+      "password": "Ram@1234",
+      "displayname": "Ram Parmar",
+      "id": 5
+    }
+  ],
+  "addQuestion": [
+    {
+      "title": "replace api",
+      "body": "How to place this (from web GUI) stop loss order to close short position on huobi using rest API?",
+      "tags": [
+        "api",
+        ""
+      ],
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "title": "Code doesn't execute if condition when element text changes",
+      "body": "When I get started the 1st if condition works fine but when $initialVal.text() changes to failed or finished my script goes in infinite loop.",
+      "tags": [
+        "js",
+        "loop"
+      ],
+      "userId": 5,
+      "id": 6
+    }
+  ]
+}

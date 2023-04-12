@@ -1,0 +1,9 @@
+.btn{
+    background-color: cadetblue;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,21 @@
+
+<div class="d-flex justify-content-around mt-2 mb-5">
+   <div>
+    <h2>Top Question</h2>
+   </div>
+   <div>
+    <button class="btn btn-primary"(click)="gotoAdd()">Ask Question</button>
+   </div>
+</div>
+
+ <div class="container mt-5">
+    <hr>
+    <div *ngFor="let question of questions">
+      <h3>{{ question.title | titlecase}}</h3>
+      <p>{{ question.body }}</p>
+      <div *ngFor="let item of question.tags">
+         <p> {{item}} </p>
+      </div>
+      <hr>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<div class="fixednav">
+
+    <nav class="grocery_nav bgColor text-dark bg-opacity-10 text-capitalize">
+
+        <div class="logo d-flex" routerLink="/">
+            <a routerLink="/" class="navbar-brand">
+                <img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg" alt="StackOverFlow">
+            </a>
+        </div>
+
+        <div class="d-flex">
+            <div class="links">
+                <ul class="nav-bar nav">
+                    <li class="nav-item">
+                        <a routerLink="module/cart" class="nav-link text-dark ">
+                            about
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="module/cart" class="nav-link text-dark ">
+                         product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="module/cart" class="nav-link text-dark ">
+                            for teams
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search_bar">
+            <input type="text" class="form-control" placeholder="search here" id="search">
+        </div>
+
+        <div *ngIf="menuType == 'normal'">
+            <div class="links">
+                <ul class="nav-bar nav">
+                    <li class="nav-item">
+                        <a routerLink="/module/user/login" class="nav-link text-dark btn">
+                            login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/module/user/sign-up" class="nav-link text-dark btn">
+                            sign up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="menuType == 'user'">
+            <div class="links">
+                <ul class="nav-bar nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark btn" routerLink="/module/user/user-profile">
+                            {{userName}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/" class="nav-link text-dark btn" (click)="logout()">
+                          logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>

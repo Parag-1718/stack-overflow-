@@ -17,6 +17,12 @@
       "password": "Ram@1234",
       "displayname": "Ram Parmar",
       "id": 5
+    },
+    {
+      "email": "peter@gmail.com",
+      "password": "Peter@12",
+      "displayname": "priyanshu",
+      "id": 6
     }
   ],
   "addQuestion": [
@@ -39,6 +45,16 @@
       ],
       "userId": 5,
       "id": 6
+    },
+    {
+      "title": "Data Zero Offset with MySQL",
+      "body": "0\n\n\nI'm currently plotting data in grafana that selects it from a table in MySQL, the thing is, my sensors are not calibrated, and never will (due to changes on the asset I'm monitoring). Because of that I need to offset the data before ploting it (similar to the Zero Offset function from Signal Express).\n\nMy idea was to select the first 50 rows, calculate their avarage, then subtract this value from the data. But I were not able to do it.",
+      "tags": [
+        "sql",
+        "mysql"
+      ],
+      "userId": 6,
+      "id": 7
     }
   ]
 }

@@ -13,4 +13,24 @@
       </div>
     </div>
 </div>
+
+<div class="container mt-5">
+  <h3>Your questions</h3>
+  <div *ngFor="let que of allQuestion">
+    <div class="card my-2">
+      <div class="card-body">
+        <h5 class="card-title">{{ que.title || null }}</h5>
+        <div class="card-text">
+          <div class="tags">
+            <p *ngFor="let tag of que.tags">{{ tag }}</p>
+          </div>
+          <hr>
+          <p>{{ que.body ||null }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   

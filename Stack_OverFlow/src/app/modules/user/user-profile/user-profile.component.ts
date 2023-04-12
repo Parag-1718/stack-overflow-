@@ -13,6 +13,7 @@ export class UserProfileComponent {
 
   //#region 
   userDetails:any = [];
+  allQuestion:any = []
   constructor(
     private _user:UserAuthService,
     private _que:QuestionsService,
@@ -53,6 +54,7 @@ export class UserProfileComponent {
       this._que.getQuestionByUserid(id).subscribe((res:any)=>{
         if(res && res.body){
           console.log(res.body);
+          this.allQuestion = res.body
         }
       })
   }
